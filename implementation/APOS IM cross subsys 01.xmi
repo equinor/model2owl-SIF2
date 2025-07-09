@@ -1,0 +1,1697 @@
+<?xml  version='1.0' encoding='windows-1252' ?>
+<xmi:XMI xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1">
+	<xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5" exporterID="1712"/>
+	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" name="APOS Information Model - Cross subsys" visibility="public">
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_870D9A77_C92E_4753_BB6D_14364912667E" name="FinalElementComponent" visibility="public">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_2633AA04_FB09_43e7_A8D5_85CCB91BECAE" general="EAID_E3975E56_4FB2_41d4_8301_962D147FD390" isSubstitutable="true"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070" name="FinalElementSubsystem" visibility="public">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_D12239EA_BCD4_47ab_B72B_00FF17A71104" general="EAID_AC63A030_EC45_4727_AF98_56571E551BB5" isSubstitutable="true"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8" name="Group" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst310086_E30F_45b5_A608_574D9BC98207" visibility="public" association="EAID_53310086_E30F_45b5_A608_574D9BC98207" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst64DCB2_A74F_4251_8F22_A190155917A9" visibility="public" association="EAID_B764DCB2_A74F_4251_8F22_A190155917A9" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst6586FE_7028_4025_947E_BF82BF15D099" visibility="public" association="EAID_FE6586FE_7028_4025_947E_BF82BF15D099" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_53310086_E30F_45b5_A608_574D9BC98207" visibility="public">
+				<memberEnd xmi:idref="EAID_dst310086_E30F_45b5_A608_574D9BC98207"/>
+				<memberEnd xmi:idref="EAID_src310086_E30F_45b5_A608_574D9BC98207"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src310086_E30F_45b5_A608_574D9BC98207" visibility="public" association="EAID_53310086_E30F_45b5_A608_574D9BC98207" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
+					<type xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000013__E30F_45b5_A608_574D9BC98207" value="1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000014__E30F_45b5_A608_574D9BC98207" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_B764DCB2_A74F_4251_8F22_A190155917A9" visibility="public">
+				<memberEnd xmi:idref="EAID_dst64DCB2_A74F_4251_8F22_A190155917A9"/>
+				<memberEnd xmi:idref="EAID_src64DCB2_A74F_4251_8F22_A190155917A9"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src64DCB2_A74F_4251_8F22_A190155917A9" visibility="public" association="EAID_B764DCB2_A74F_4251_8F22_A190155917A9" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
+					<type xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000005__A74F_4251_8F22_A190155917A9" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000006__A74F_4251_8F22_A190155917A9" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_FE6586FE_7028_4025_947E_BF82BF15D099" visibility="public">
+				<memberEnd xmi:idref="EAID_dst6586FE_7028_4025_947E_BF82BF15D099"/>
+				<memberEnd xmi:idref="EAID_src6586FE_7028_4025_947E_BF82BF15D099"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src6586FE_7028_4025_947E_BF82BF15D099" name="crossSubsystemGroups" visibility="public" association="EAID_FE6586FE_7028_4025_947E_BF82BF15D099" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
+					<type xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000011__7028_4025_947E_BF82BF15D099" value="0"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000012__7028_4025_947E_BF82BF15D099" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_3565E68B_7176_431a_B1BB_D5E95BB89824" visibility="public">
+				<memberEnd xmi:idref="EAID_dst65E68B_7176_431a_B1BB_D5E95BB89824"/>
+				<memberEnd xmi:idref="EAID_src65E68B_7176_431a_B1BB_D5E95BB89824"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src65E68B_7176_431a_B1BB_D5E95BB89824" visibility="public" association="EAID_3565E68B_7176_431a_B1BB_D5E95BB89824" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
+					<type xmi:idref="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000001__7176_431a_B1BB_D5E95BB89824" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000002__7176_431a_B1BB_D5E95BB89824" value="1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_790A2546_2647_4a9f_8D0C_6CA1A440F8F7" visibility="public">
+				<memberEnd xmi:idref="EAID_dst0A2546_2647_4a9f_8D0C_6CA1A440F8F7"/>
+				<memberEnd xmi:idref="EAID_src0A2546_2647_4a9f_8D0C_6CA1A440F8F7"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src0A2546_2647_4a9f_8D0C_6CA1A440F8F7" visibility="public" association="EAID_790A2546_2647_4a9f_8D0C_6CA1A440F8F7" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="shared">
+					<type xmi:idref="EAID_E3975E56_4FB2_41d4_8301_962D147FD390"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000003__2647_4a9f_8D0C_6CA1A440F8F7" value="1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000004__2647_4a9f_8D0C_6CA1A440F8F7" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_57424008_993A_4e29_99D0_F566441150FC" name="InputDeviceComponent" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_41D3E40B_C49B_4a97_9F1B_E2AF47CB1063" name="MeasuringPrinciple" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000007_C49B_4a97_9F1B_E2AF47CB1063" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000008_C49B_4a97_9F1B_E2AF47CB1063" value="1"/>
+					<type xmi:idref="EAJava_int"/>
+				</ownedAttribute>
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_01B75D95_F10F_48d2_BA82_DEDC02B422C4" general="EAID_E3975E56_4FB2_41d4_8301_962D147FD390" isSubstitutable="true"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_71EF7272_7240_43f7_85A6_765A54917BCE" name="InputDeviceSubsystem" visibility="public">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_2B0DF1EF_D139_4211_AE8C_2BC195FF000B" general="EAID_AC63A030_EC45_4727_AF98_56571E551BB5" isSubstitutable="true"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D" name="LogicSolverComponent" visibility="public">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_E6642E18_CAB4_4ca8_B9BA_06E54E74461D" general="EAID_E3975E56_4FB2_41d4_8301_962D147FD390" isSubstitutable="true"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB" name="LogicSolverSubsystem" visibility="public">
+				<generalization xmi:type="uml:Generalization" xmi:id="EAID_28EC6BB5_3104_46f1_86C1_F5CBCCE5D32C" general="EAID_AC63A030_EC45_4727_AF98_56571E551BB5" isSubstitutable="true"/>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723" name="SIF" visibility="public"/>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_0FA1DD68_E652_4704_919E_63A9A713EEF7" visibility="public">
+				<memberEnd xmi:idref="EAID_dstA1DD68_E652_4704_919E_63A9A713EEF7"/>
+				<memberEnd xmi:idref="EAID_srcA1DD68_E652_4704_919E_63A9A713EEF7"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_srcA1DD68_E652_4704_919E_63A9A713EEF7" visibility="public" association="EAID_0FA1DD68_E652_4704_919E_63A9A713EEF7" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
+					<type xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000009__E652_4704_919E_63A9A713EEF7" value="1"/>
+					<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000010__E652_4704_919E_63A9A713EEF7" value="-1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_AC63A030_EC45_4727_AF98_56571E551BB5" name="SIF Subsystem" visibility="public" isAbstract="true">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dstA1DD68_E652_4704_919E_63A9A713EEF7" visibility="public" association="EAID_0FA1DD68_E652_4704_919E_63A9A713EEF7" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Association" xmi:id="EAID_C883CB76_B4EE_43db_B6F2_7FA6AAA433A2" visibility="public">
+				<memberEnd xmi:idref="EAID_dst83CB76_B4EE_43db_B6F2_7FA6AAA433A2"/>
+				<memberEnd xmi:idref="EAID_src83CB76_B4EE_43db_B6F2_7FA6AAA433A2"/>
+				<ownedEnd xmi:type="uml:Property" xmi:id="EAID_src83CB76_B4EE_43db_B6F2_7FA6AAA433A2" visibility="public" association="EAID_C883CB76_B4EE_43db_B6F2_7FA6AAA433A2" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="composite">
+					<type xmi:idref="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5"/>
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000015__B4EE_43db_B6F2_7FA6AAA433A2" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000016__B4EE_43db_B6F2_7FA6AAA433A2" value="1"/>
+				</ownedEnd>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_E3975E56_4FB2_41d4_8301_962D147FD390" name="SISComponent" visibility="public" isAbstract="true">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_5262CD4F_C794_4382_A025_E2A7D6643340" name="Description" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000017_C794_4382_A025_E2A7D6643340" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000018_C794_4382_A025_E2A7D6643340" value="1"/>
+					<type xmi:idref="EAJava_String"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_01EC4E08_F678_458c_B297_988B457A8979" name="Tag" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000019_F678_458c_B297_988B457A8979" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000020_F678_458c_B297_988B457A8979" value="1"/>
+					<type xmi:idref="EAJava_String"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst0A2546_2647_4a9f_8D0C_6CA1A440F8F7" visibility="public" association="EAID_790A2546_2647_4a9f_8D0C_6CA1A440F8F7" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5" name="VoteBetweenGroups" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_EA69F996_A216_4d87_8ECA_9003797BCEAF" name="M" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000021_A216_4d87_8ECA_9003797BCEAF" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000022_A216_4d87_8ECA_9003797BCEAF" value="1"/>
+					<type xmi:idref="EAJava_int"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst83CB76_B4EE_43db_B6F2_7FA6AAA433A2" visibility="public" association="EAID_C883CB76_B4EE_43db_B6F2_7FA6AAA433A2" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:Class" xmi:id="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412" name="VoteWithinGroup" visibility="public">
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187" name="K" visibility="private" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
+					<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000023_9E9B_40e8_97C5_79EE5F20C187" value="1"/>
+					<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000024_9E9B_40e8_97C5_79EE5F20C187" value="1"/>
+					<type xmi:idref="EAJava_int"/>
+				</ownedAttribute>
+				<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_dst65E68B_7176_431a_B1BB_D5E95BB89824" visibility="public" association="EAID_3565E68B_7176_431a_B1BB_D5E95BB89824" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
+					<type xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+				</ownedAttribute>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_FC4F3A31_332B_4aa8_A878_79249CA26C6C" name="" visibility="public" classifier="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_F8A9001A_D2E2_4e5f_B51F_DB438A9E2B5B" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_34EE6AD9_D26C_48a4_88F1_09E478A855F7" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_D26C_48a4_88F1_09E478A855F7">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_D26C_48a4_88F1_09E478A855F7" body="=EDS valve"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_4EAE9F61_506C_487a_94FD_248C3682855E" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_506C_487a_94FD_248C3682855E">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_506C_487a_94FD_248C3682855E" body="=EDS valve"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_6ADE9ACB_B6BE_421f_BD1B_4932918AF604" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_B6BE_421f_BD1B_4932918AF604" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_B6BE_421f_BD1B_4932918AF604" body="=2"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_58C080D3_E022_41b5_9177_3BD38986C3A3" name="" visibility="public" classifier="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_3D5E2DED_CDE6_434e_B5A4_23065363F826" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_8C468D24_90D5_4030_AED3_159F1459E47E" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_90D5_4030_AED3_159F1459E47E">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_90D5_4030_AED3_159F1459E47E" body="=Solenoid"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_558D78A7_BB10_4ad4_8733_E22AF315097D" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_BB10_4ad4_8733_E22AF315097D" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_BB10_4ad4_8733_E22AF315097D" body="=1"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_B9524B51_8B1C_4c04_A862_A2FC3EB62BC7" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_D26D730A_6544_42bc_9D3C_5A42A035A79E" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_F30C1A94_9684_4490_AFA4_CFEAC4069CDD" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_9684_4490_AFA4_CFEAC4069CDD">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_9684_4490_AFA4_CFEAC4069CDD" body="=PI"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_3EB65F59_A1DC_4910_B170_F5FEB4C08BD0" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_A1DC_4910_B170_F5FEB4C08BD0">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_A1DC_4910_B170_F5FEB4C08BD0" body="=YI"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_EB9485C5_7433_4001_BF38_360CD1B6629A" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_7433_4001_BF38_360CD1B6629A">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_7433_4001_BF38_360CD1B6629A" body="=VC"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_DD2A1382_A640_4d12_B0B3_84DFF78FE66C" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_A640_4d12_B0B3_84DFF78FE66C" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_A640_4d12_B0B3_84DFF78FE66C" body="=3"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_14B203FA_759E_4780_960A_507B6F7B423D" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_3D9926EB_762A_489b_AB22_51FD711DB876" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_762A_489b_AB22_51FD711DB876">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_762A_489b_AB22_51FD711DB876" body="=VC"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_13C06F7F_BE2C_4a25_9237_99CD6B4F27BC" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_BE2C_4a25_9237_99CD6B4F27BC">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_BE2C_4a25_9237_99CD6B4F27BC" body="=YI"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_5E4AABBB_988B_4419_8255_356FDAE70842" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_988B_4419_8255_356FDAE70842">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_988B_4419_8255_356FDAE70842" body="=PI"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_545AF3A5_3160_41d2_81B8_A46402352D7D" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_3160_41d2_81B8_A46402352D7D" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_3160_41d2_81B8_A46402352D7D" body="=3"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_A5E139F5_8EEF_4b2f_801C_295FF169ADF0" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_DEE02EF1_19ED_431f_95CC_5608DD706C99" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_19ED_431f_95CC_5608DD706C99">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_19ED_431f_95CC_5608DD706C99" body="=PI"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_2F275508_0060_4732_B20A_9E2384A61204" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_0060_4732_B20A_9E2384A61204">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_0060_4732_B20A_9E2384A61204" body="=YI"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_1A0CF684_E69C_4d17_9F40_D85D5AF7DE79" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_E69C_4d17_9F40_D85D5AF7DE79">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_E69C_4d17_9F40_D85D5AF7DE79" body="=VC"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_927BF6AA_2388_4ec7_903D_0A5E00566253" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_2388_4ec7_903D_0A5E00566253" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_2388_4ec7_903D_0A5E00566253" body="=3"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_D5610A2C_C4F7_4171_A6C1_6C341CC8F6C0" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_9C11A7A3_8BA7_451c_9969_215F83998C0D" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_8BA7_451c_9969_215F83998C0D">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_8BA7_451c_9969_215F83998C0D" body="=PI"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_393D02B0_5F4D_4eae_852D_C7284AA5B593" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_5F4D_4eae_852D_C7284AA5B593">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_5F4D_4eae_852D_C7284AA5B593" body="=YI"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_CD8342B7_46B2_4f68_9A0F_245B493FE464" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_46B2_4f68_9A0F_245B493FE464">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_46B2_4f68_9A0F_245B493FE464" body="=VC"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_9F2888A0_0451_44fd_B241_E207008F6BAE" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_0451_44fd_B241_E207008F6BAE" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_0451_44fd_B241_E207008F6BAE" body="=3"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_DAA98627_01DF_4cf0_ABA9_7587AAF9427B" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_01DF_4cf0_ABA9_7587AAF9427B" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_01DF_4cf0_ABA9_7587AAF9427B" body="=3"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_26A6B000_58E7_48ae_81C0_24E19C637367" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_D5542703_FC05_4146_8D10_25410DF6145B" name="" visibility="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_FC05_4146_8D10_25410DF6145B">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_FC05_4146_8D10_25410DF6145B" body="=Deluge valve"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_413A8B93_8E58_4bc0_B97B_0E2E8818DAA7" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_8E58_4bc0_B97B_0E2E8818DAA7" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_8E58_4bc0_B97B_0E2E8818DAA7" body="=1"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_567BD55C_41B9_40c6_BFAA_FF283A04351D" name="" visibility="public" classifier="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_41B9_40c6_BFAA_FF283A04351D" definingClassifier="EAID_EA69F996_A216_4d87_8ECA_9003797BCEAF">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_41B9_40c6_BFAA_FF283A04351D" body="=3"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_DA822E5B_DC24_44a6_A07F_828684253FFE" name="" visibility="public" classifier="EAID_71EF7272_7240_43f7_85A6_765A54917BCE"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_A20A218D_1AF5_4306_8499_0B39E7215AF2" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_58B33647_76D3_45c0_8892_136A87CDBA79" name="24-LT-203A" visibility="public" classifier="EAID_57424008_993A_4e29_99D0_F566441150FC">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_76D3_45c0_8892_136A87CDBA79">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_76D3_45c0_8892_136A87CDBA79" body="=LevelTransmitter"/>
+				</slot>
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000001_76D3_45c0_8892_136A87CDBA79" definingClassifier="EAID_41D3E40B_C49B_4a97_9F1B_E2AF47CB1063">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000001_76D3_45c0_8892_136A87CDBA79" body="=dp"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_5FB74F91_DC7B_42a4_81D4_5025A1938A4C" name="24-LT-203B" visibility="public" classifier="EAID_57424008_993A_4e29_99D0_F566441150FC">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_DC7B_42a4_81D4_5025A1938A4C">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_DC7B_42a4_81D4_5025A1938A4C" body="=LevelTransmitter"/>
+				</slot>
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000001_DC7B_42a4_81D4_5025A1938A4C" definingClassifier="EAID_41D3E40B_C49B_4a97_9F1B_E2AF47CB1063">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000001_DC7B_42a4_81D4_5025A1938A4C" body="=dp"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_E3579DD7_56D2_4c21_A437_30F7C3D77FF6" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_DF0B5D8D_1B28_46a0_A35B_6C98E587BE74" name="" visibility="public" classifier="EAID_57424008_993A_4e29_99D0_F566441150FC">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_1B28_46a0_A35B_6C98E587BE74">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_1B28_46a0_A35B_6C98E587BE74" body="=Pressure transmitter"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_90FDE157_8F16_472d_829B_B77474C084E1" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_8F16_472d_829B_B77474C084E1" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_8F16_472d_829B_B77474C084E1" body="=1"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_6CC665CE_F6C2_4e5f_AF43_1778D3BA18C0" name="" visibility="public" classifier="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_F6C2_4e5f_AF43_1778D3BA18C0" definingClassifier="EAID_EA69F996_A216_4d87_8ECA_9003797BCEAF">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_F6C2_4e5f_AF43_1778D3BA18C0" body="=1"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_F0ACFC9D_E1C6_4f28_BA18_F2F5087DDE03" name="" visibility="public" classifier="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_1192BCE0_ED2B_424f_AE18_7BE9EB13E2D5" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_CB4ECA9F_BD31_4fe9_A4A4_C155E8004381" name="" visibility="public" classifier="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_BD31_4fe9_A4A4_C155E8004381">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_BD31_4fe9_A4A4_C155E8004381" body="=CPU"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_04439433_1F9B_486b_85CA_CB4D046825CE" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_1F9B_486b_85CA_CB4D046825CE" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_1F9B_486b_85CA_CB4D046825CE" body="=1"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_87D8D85A_0453_4990_9B9B_C48770446D42" name="" visibility="public" classifier="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_0B632700_DED2_4842_80A9_E6DB7905767D" name="" visibility="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_20581841_110D_4201_AC01_4356E3531347" name="" visibility="public" classifier="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_110D_4201_AC01_4356E3531347">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_110D_4201_AC01_4356E3531347" body="=F &amp; G node"/>
+				</slot>
+			</packagedElement>
+			<packagedElement xmi:type="uml:InstanceSpecification" xmi:id="EAID_2433B12A_2A78_487a_ABAF_FBB94B636F7C" name="" visibility="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<slot xmi:type="uml:Slot" xmi:id="EAID_SL000000_2A78_487a_ABAF_FBB94B636F7C" definingClassifier="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187">
+					<value xmi:type="uml:OpaqueExpression" xmi:id="EAID_OE000000_2A78_487a_ABAF_FBB94B636F7C" body="=1"/>
+				</slot>
+			</packagedElement>
+		</packagedElement>
+	</uml:Model>
+	<xmi:Extension extender="Enterprise Architect" extenderID="6.5">
+		<elements>
+			<element xmi:idref="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" xmi:type="uml:Package" name="APOS Information Model - Cross subsys" scope="public">
+				<model package2="EAID_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" package="EAPK_BDAB4ECB_2931_4c3e_96D2_3D93FF7F6D67" tpos="4" ea_localid="5" ea_eleType="package"/>
+				<properties isSpecification="false" sType="Package" nType="0" scope="public"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 11:51:57" modified="2024-09-17 15:30:36" complexity="1" status="Proposed"/>
+				<code gentype="&lt;none&gt;"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="Model"/>
+				<packageproperties version="1.0" tpos="4"/>
+				<paths/>
+				<times created="2024-09-13 11:51:57" modified="2024-09-17 15:30:36" lastloaddate="2019-01-23 13:38:11" lastsavedate="2019-01-23 13:38:11"/>
+				<flags iscontrolled="0" isprotected="0" batchsave="0" batchload="0" usedtd="0" logxml="0"/>
+			</element>
+			<element xmi:idref="EAID_870D9A77_C92E_4753_BB6D_14364912667E" xmi:type="uml:Class" name="FinalElementComponent" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="120" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 12:14:16" modified="2024-09-13 12:14:20" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" ea_classified="{F30C1A94-9684-4490-AFA4-CFEAC4069CDD},{3EB65F59-A1DC-4910-B170-F5FEB4C08BD0},{EB9485C5-7433-4001-BF38-360CD1B6629A},{3D9926EB-762A-489b-AB22-51FD711DB876},{13C06F7F-BE2C-4a25-9237-99CD6B4F27BC},{5E4AABBB-988B-4419-8255-356FDAE70842},{34EE6AD9-D26C-48a4-88F1-09E478A855F7},{4EAE9F61-506C-487a-94FD-248C3682855E},{DEE02EF1-19ED-431f-95CC-5608DD706C99},{2F275508-0060-4732-B20A-9E2384A61204},{1A0CF684-E69C-4d17-9F40-D85D5AF7DE79},{9C11A7A3-8BA7-451c-9969-215F83998C0D},{393D02B0-5F4D-4eae-852D-C7284AA5B593},{CD8342B7-46B2-4f68-9A0F-245B493FE464},{8C468D24-90D5-4030-AED3-159F1459E47E},{D5542703-FC05-4146-8D10-25410DF6145B}"/>
+				<links>
+					<Generalization xmi:id="EAID_2633AA04_FB09_43e7_A8D5_85CCB91BECAE" start="EAID_870D9A77_C92E_4753_BB6D_14364912667E" end="EAID_E3975E56_4FB2_41d4_8301_962D147FD390"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070" xmi:type="uml:Class" name="FinalElementSubsystem" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="114" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 11:56:20" modified="2024-09-16 15:54:41" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" ea_classified="{FC4F3A31-332B-4aa8-A878-79249CA26C6C},{58C080D3-E022-41b5-9177-3BD38986C3A3}"/>
+				<links>
+					<Generalization xmi:id="EAID_D12239EA_BCD4_47ab_B72B_00FF17A71104" start="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8" xmi:type="uml:Class" name="Group" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="116" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 11:59:58" modified="2024-09-13 12:00:00" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" ea_classified="{A20A218D-1AF5-4306-8499-0B39E7215AF2},{E3579DD7-56D2-4c21-A437-30F7C3D77FF6},{D26D730A-6544-42bc-9D3C-5A42A035A79E},{14B203FA-759E-4780-960A-507B6F7B423D},{A5E139F5-8EEF-4b2f-801C-295FF169ADF0},{3D5E2DED-CDE6-434e-B5A4-23065363F826},{1192BCE0-ED2B-424f-AE18-7BE9EB13E2D5},{F8A9001A-D2E2-4e5f-B51F-DB438A9E2B5B},{0B632700-DED2-4842-80A9-E6DB7905767D},{B9524B51-8B1C-4c04-A862-A2FC3EB62BC7},{D5610A2C-C4F7-4171-A6C1-6C341CC8F6C0},{26A6B000-58E7-48ae-81C0-24E19C637367}"/>
+				<links>
+					<Aggregation xmi:id="EAID_53310086_E30F_45b5_A608_574D9BC98207" start="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+					<Aggregation xmi:id="EAID_B764DCB2_A74F_4251_8F22_A190155917A9" start="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8" end="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+					<Aggregation xmi:id="EAID_FE6586FE_7028_4025_947E_BF82BF15D099" start="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8" end="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723"/>
+					<Aggregation xmi:id="EAID_3565E68B_7176_431a_B1BB_D5E95BB89824" start="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412" end="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+					<Aggregation xmi:id="EAID_790A2546_2647_4a9f_8D0C_6CA1A440F8F7" start="EAID_E3975E56_4FB2_41d4_8301_962D147FD390" end="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+					<Aggregation xmi:id="EAID_B764DCB2_A74F_4251_8F22_A190155917A9" start="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8" end="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_57424008_993A_4e29_99D0_F566441150FC" xmi:type="uml:Class" name="InputDeviceComponent" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="118" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 12:13:54" modified="2024-09-13 12:20:20" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" ea_classified="{58B33647-76D3-45c0-8892-136A87CDBA79},{5FB74F91-DC7B-42a4-81D4-5025A1938A4C},{DF0B5D8D-1B28-46a0-A35B-6C98E587BE74}"/>
+				<attributes>
+					<attribute xmi:idref="EAID_41D3E40B_C49B_4a97_9F1B_E2AF47CB1063" name="MeasuringPrinciple" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="13" ea_guid="{41D3E40B-C49B-4a97-9F1B-E2AF47CB1063}"/>
+						<properties type="int" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<links>
+					<Generalization xmi:id="EAID_01B75D95_F10F_48d2_BA82_DEDC02B422C4" start="EAID_57424008_993A_4e29_99D0_F566441150FC" end="EAID_E3975E56_4FB2_41d4_8301_962D147FD390"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_71EF7272_7240_43f7_85A6_765A54917BCE" xmi:type="uml:Class" name="InputDeviceSubsystem" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="112" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 11:56:04" modified="2024-09-16 15:54:29" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" ea_classified="{DA822E5B-DC24-44a6-A07F-828684253FFE}"/>
+				<links>
+					<Generalization xmi:id="EAID_2B0DF1EF_D139_4211_AE8C_2BC195FF000B" start="EAID_71EF7272_7240_43f7_85A6_765A54917BCE" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D" xmi:type="uml:Class" name="LogicSolverComponent" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="119" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 12:14:05" modified="2024-09-13 12:14:12" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" ea_classified="{CB4ECA9F-BD31-4fe9-A4A4-C155E8004381},{20581841-110D-4201-AC01-4356E3531347}"/>
+				<links>
+					<Generalization xmi:id="EAID_E6642E18_CAB4_4ca8_B9BA_06E54E74461D" start="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D" end="EAID_E3975E56_4FB2_41d4_8301_962D147FD390"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB" xmi:type="uml:Class" name="LogicSolverSubsystem" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="113" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 11:56:13" modified="2024-12-02 13:57:34" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" ea_classified="{F0ACFC9D-E1C6-4f28-BA18-F2F5087DDE03},{87D8D85A-0453-4990-9B9B-C48770446D42}"/>
+				<links>
+					<Generalization xmi:id="EAID_28EC6BB5_3104_46f1_86C1_F5CBCCE5D32C" start="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723" xmi:type="uml:Class" name="SIF" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="110" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 11:55:15" modified="2024-09-13 11:55:19" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+				<links>
+					<Aggregation xmi:id="EAID_0FA1DD68_E652_4704_919E_63A9A713EEF7" start="EAID_AC63A030_EC45_4727_AF98_56571E551BB5" end="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723"/>
+					<Aggregation xmi:id="EAID_FE6586FE_7028_4025_947E_BF82BF15D099" start="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8" end="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5" xmi:type="uml:Class" name="SIF Subsystem" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="111" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="true" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 11:55:23" modified="2024-09-13 12:13:45" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+				<links>
+					<Aggregation xmi:id="EAID_0FA1DD68_E652_4704_919E_63A9A713EEF7" start="EAID_AC63A030_EC45_4727_AF98_56571E551BB5" end="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723"/>
+					<Generalization xmi:id="EAID_28EC6BB5_3104_46f1_86C1_F5CBCCE5D32C" start="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+					<Generalization xmi:id="EAID_2B0DF1EF_D139_4211_AE8C_2BC195FF000B" start="EAID_71EF7272_7240_43f7_85A6_765A54917BCE" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+					<Aggregation xmi:id="EAID_53310086_E30F_45b5_A608_574D9BC98207" start="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+					<Aggregation xmi:id="EAID_C883CB76_B4EE_43db_B6F2_7FA6AAA433A2" start="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+					<Generalization xmi:id="EAID_D12239EA_BCD4_47ab_B72B_00FF17A71104" start="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_E3975E56_4FB2_41d4_8301_962D147FD390" xmi:type="uml:Class" name="SISComponent" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="117" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="true" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 12:13:29" modified="2024-09-13 12:13:48" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+				<attributes>
+					<attribute xmi:idref="EAID_5262CD4F_C794_4382_A025_E2A7D6643340" name="Description" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="11" ea_guid="{5262CD4F-C794-4382-A025-E2A7D6643340}"/>
+						<properties type="String" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+					<attribute xmi:idref="EAID_01EC4E08_F678_458c_B297_988B457A8979" name="Tag" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="12" ea_guid="{01EC4E08-F678-458c-B297-988B457A8979}"/>
+						<properties type="String" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="1"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<links>
+					<Aggregation xmi:id="EAID_790A2546_2647_4a9f_8D0C_6CA1A440F8F7" start="EAID_E3975E56_4FB2_41d4_8301_962D147FD390" end="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+					<Generalization xmi:id="EAID_01B75D95_F10F_48d2_BA82_DEDC02B422C4" start="EAID_57424008_993A_4e29_99D0_F566441150FC" end="EAID_E3975E56_4FB2_41d4_8301_962D147FD390"/>
+					<Generalization xmi:id="EAID_2633AA04_FB09_43e7_A8D5_85CCB91BECAE" start="EAID_870D9A77_C92E_4753_BB6D_14364912667E" end="EAID_E3975E56_4FB2_41d4_8301_962D147FD390"/>
+					<Generalization xmi:id="EAID_E6642E18_CAB4_4ca8_B9BA_06E54E74461D" start="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D" end="EAID_E3975E56_4FB2_41d4_8301_962D147FD390"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5" xmi:type="uml:Class" name="VoteBetweenGroups" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="115" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-13 11:57:50" modified="2024-09-17 08:17:14" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" ea_classified="{6CC665CE-F6C2-4e5f-AF43-1778D3BA18C0},{567BD55C-41B9-40c6-BFAA-FF283A04351D}"/>
+				<attributes>
+					<attribute xmi:idref="EAID_EA69F996_A216_4d87_8ECA_9003797BCEAF" name="M" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="14" ea_guid="{EA69F996-A216-4d87-8ECA-9003797BCEAF}"/>
+						<properties type="int" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<links>
+					<Aggregation xmi:id="EAID_C883CB76_B4EE_43db_B6F2_7FA6AAA433A2" start="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5" end="EAID_AC63A030_EC45_4727_AF98_56571E551BB5"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412" xmi:type="uml:Class" name="VoteWithinGroup" scope="public">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="91" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Class" nType="0" scope="public" isRoot="false" isLeaf="false" isAbstract="false" isActive="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 15:53:48" modified="2024-09-17 15:31:30" complexity="1" status="Proposed"/>
+				<code product_name="Java" gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" ea_classified="{2433B12A-2A78-487a-ABAF-FBB94B636F7C},{90FDE157-8F16-472d-829B-B77474C084E1},{DAA98627-01DF-4cf0-ABA9-7587AAF9427B},{DD2A1382-A640-4d12-B0B3-84DFF78FE66C},{545AF3A5-3160-41d2-81B8-A46402352D7D},{6ADE9ACB-B6BE-421f-BD1B-4932918AF604},{04439433-1F9B-486b-85CA-CB4D046825CE},{927BF6AA-2388-4ec7-903D-0A5E00566253},{9F2888A0-0451-44fd-B241-E207008F6BAE},{558D78A7-BB10-4ad4-8733-E22AF315097D},{413A8B93-8E58-4bc0-B97B-0E2E8818DAA7}"/>
+				<attributes>
+					<attribute xmi:idref="EAID_BE33E60C_9E9B_40e8_97C5_79EE5F20C187" name="K" scope="Private">
+						<initial/>
+						<documentation/>
+						<model ea_localid="15" ea_guid="{BE33E60C-9E9B-40e8-97C5-79EE5F20C187}"/>
+						<properties type="int" precision="0" collection="false" length="0" static="0" duplicates="0" changeability="changeable"/>
+						<coords ordered="0" scale="0"/>
+						<containment containment="Not Specified" position="0"/>
+						<stereotype/>
+						<bounds lower="1" upper="1"/>
+						<options/>
+						<style/>
+						<styleex value="volatile=0;union=0;"/>
+						<tags/>
+						<xrefs/>
+					</attribute>
+				</attributes>
+				<links>
+					<Aggregation xmi:id="EAID_3565E68B_7176_431a_B1BB_D5E95BB89824" start="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412" end="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8"/>
+				</links>
+			</element>
+			<element xmi:idref="EAID_FC4F3A31_332B_4aa8_A878_79249CA26C6C" xmi:type="uml:Object" scope="public" classifier="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="90" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementSubsystem" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 13:06:38" modified="2024-09-16 13:06:38" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_F8A9001A_D2E2_4e5f_B51F_DB438A9E2B5B" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_FC4F3A31_332B_4aa8_A878_79249CA26C6C" tpos="0" ea_localid="122" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:13:09" modified="2024-09-16 16:13:13" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_34EE6AD9_D26C_48a4_88F1_09E478A855F7" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_F8A9001A_D2E2_4e5f_B51F_DB438A9E2B5B" tpos="0" ea_localid="124" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:14:43" modified="2024-09-17 09:11:48" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=EDS valve;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_4EAE9F61_506C_487a_94FD_248C3682855E" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_F8A9001A_D2E2_4e5f_B51F_DB438A9E2B5B" tpos="0" ea_localid="125" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:14:52" modified="2024-09-17 09:12:20" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=EDS valve;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_6ADE9ACB_B6BE_421f_BD1B_4932918AF604" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_F8A9001A_D2E2_4e5f_B51F_DB438A9E2B5B" tpos="0" ea_localid="126" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:16:01" modified="2024-09-16 16:16:49" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=2;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_58C080D3_E022_41b5_9177_3BD38986C3A3" xmi:type="uml:Object" scope="public" classifier="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="129" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementSubsystem" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 13:53:38" modified="2024-09-17 13:53:38" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_3D5E2DED_CDE6_434e_B5A4_23065363F826" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_58C080D3_E022_41b5_9177_3BD38986C3A3" tpos="0" ea_localid="109" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:15:17" modified="2024-09-17 15:20:47" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_8C468D24_90D5_4030_AED3_159F1459E47E" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_3D5E2DED_CDE6_434e_B5A4_23065363F826" tpos="0" ea_localid="144" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:16:17" modified="2024-09-17 15:20:47" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=Solenoid;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_558D78A7_BB10_4ad4_8733_E22AF315097D" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_3D5E2DED_CDE6_434e_B5A4_23065363F826" tpos="0" ea_localid="143" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:15:44" modified="2024-09-17 15:20:47" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=1;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_B9524B51_8B1C_4c04_A862_A2FC3EB62BC7" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_58C080D3_E022_41b5_9177_3BD38986C3A3" tpos="0" ea_localid="132" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 14:50:11" modified="2024-09-17 15:15:17" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_D26D730A_6544_42bc_9D3C_5A42A035A79E" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_B9524B51_8B1C_4c04_A862_A2FC3EB62BC7" tpos="0" ea_localid="97" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 14:51:48" modified="2024-09-17 14:52:47" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_F30C1A94_9684_4490_AFA4_CFEAC4069CDD" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_D26D730A_6544_42bc_9D3C_5A42A035A79E" tpos="0" ea_localid="99" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 14:54:09" modified="2024-09-17 15:01:07" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=PI;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_3EB65F59_A1DC_4910_B170_F5FEB4C08BD0" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_D26D730A_6544_42bc_9D3C_5A42A035A79E" tpos="0" ea_localid="100" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 14:57:37" modified="2024-09-17 14:57:43" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=YI;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_EB9485C5_7433_4001_BF38_360CD1B6629A" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_D26D730A_6544_42bc_9D3C_5A42A035A79E" tpos="0" ea_localid="101" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 14:58:21" modified="2024-09-17 14:58:26" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=VC;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_DD2A1382_A640_4d12_B0B3_84DFF78FE66C" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_D26D730A_6544_42bc_9D3C_5A42A035A79E" tpos="0" ea_localid="102" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:01:06" modified="2024-09-17 15:03:57" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=3;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_14B203FA_759E_4780_960A_507B6F7B423D" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_B9524B51_8B1C_4c04_A862_A2FC3EB62BC7" tpos="0" ea_localid="103" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:02:56" modified="2024-09-17 15:02:56" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_3D9926EB_762A_489b_AB22_51FD711DB876" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_14B203FA_759E_4780_960A_507B6F7B423D" tpos="0" ea_localid="104" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:02:56" modified="2024-09-17 15:02:56" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=VC;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_13C06F7F_BE2C_4a25_9237_99CD6B4F27BC" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_14B203FA_759E_4780_960A_507B6F7B423D" tpos="0" ea_localid="105" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:02:56" modified="2024-09-17 15:02:56" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=YI;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_5E4AABBB_988B_4419_8255_356FDAE70842" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_14B203FA_759E_4780_960A_507B6F7B423D" tpos="0" ea_localid="106" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:02:56" modified="2024-09-17 15:02:56" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=PI;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_545AF3A5_3160_41d2_81B8_A46402352D7D" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_14B203FA_759E_4780_960A_507B6F7B423D" tpos="0" ea_localid="107" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:04:32" modified="2024-09-17 15:04:36" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=3;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_A5E139F5_8EEF_4b2f_801C_295FF169ADF0" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_B9524B51_8B1C_4c04_A862_A2FC3EB62BC7" tpos="0" ea_localid="108" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:11" modified="2024-09-17 15:10:11" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_DEE02EF1_19ED_431f_95CC_5608DD706C99" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_A5E139F5_8EEF_4b2f_801C_295FF169ADF0" tpos="0" ea_localid="135" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:11" modified="2024-09-17 15:10:11" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=PI;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_2F275508_0060_4732_B20A_9E2384A61204" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_A5E139F5_8EEF_4b2f_801C_295FF169ADF0" tpos="0" ea_localid="136" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:11" modified="2024-09-17 15:10:11" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=YI;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_1A0CF684_E69C_4d17_9F40_D85D5AF7DE79" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_A5E139F5_8EEF_4b2f_801C_295FF169ADF0" tpos="0" ea_localid="137" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:11" modified="2024-09-17 15:10:11" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=VC;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_927BF6AA_2388_4ec7_903D_0A5E00566253" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_A5E139F5_8EEF_4b2f_801C_295FF169ADF0" tpos="0" ea_localid="134" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:11" modified="2024-09-17 15:10:11" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=3;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_D5610A2C_C4F7_4171_A6C1_6C341CC8F6C0" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_B9524B51_8B1C_4c04_A862_A2FC3EB62BC7" tpos="0" ea_localid="138" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:23" modified="2024-09-17 15:10:23" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_9C11A7A3_8BA7_451c_9969_215F83998C0D" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_D5610A2C_C4F7_4171_A6C1_6C341CC8F6C0" tpos="0" ea_localid="140" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:24" modified="2024-09-17 15:10:24" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=PI;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_393D02B0_5F4D_4eae_852D_C7284AA5B593" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_D5610A2C_C4F7_4171_A6C1_6C341CC8F6C0" tpos="0" ea_localid="141" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:24" modified="2024-09-17 15:10:24" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=YI;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_CD8342B7_46B2_4f68_9A0F_245B493FE464" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_D5610A2C_C4F7_4171_A6C1_6C341CC8F6C0" tpos="0" ea_localid="142" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:24" modified="2024-09-17 15:10:24" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=VC;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_9F2888A0_0451_44fd_B241_E207008F6BAE" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_D5610A2C_C4F7_4171_A6C1_6C341CC8F6C0" tpos="0" ea_localid="139" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:10:24" modified="2024-09-17 15:10:24" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=3;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_DAA98627_01DF_4cf0_ABA9_7587AAF9427B" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_B9524B51_8B1C_4c04_A862_A2FC3EB62BC7" tpos="0" ea_localid="98" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 14:52:41" modified="2024-09-17 14:52:47" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=3;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_26A6B000_58E7_48ae_81C0_24E19C637367" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_58C080D3_E022_41b5_9177_3BD38986C3A3" tpos="0" ea_localid="145" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:18:19" modified="2024-09-17 15:18:19" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_D5542703_FC05_4146_8D10_25410DF6145B" xmi:type="uml:Object" scope="public" classifier="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_26A6B000_58E7_48ae_81C0_24E19C637367" tpos="0" ea_localid="147" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="FinalElementComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:18:19" modified="2024-09-17 15:18:19" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=Deluge valve;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_413A8B93_8E58_4bc0_B97B_0E2E8818DAA7" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_26A6B000_58E7_48ae_81C0_24E19C637367" tpos="0" ea_localid="146" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 15:18:19" modified="2024-09-17 15:18:19" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=1;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_567BD55C_41B9_40c6_BFAA_FF283A04351D" xmi:type="uml:Object" scope="public" classifier="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_58C080D3_E022_41b5_9177_3BD38986C3A3" tpos="0" ea_localid="133" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteBetweenGroups" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 14:50:45" modified="2024-09-17 15:14:56" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=M;Value=3;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_DA822E5B_DC24_44a6_A07F_828684253FFE" xmi:type="uml:Object" scope="public" classifier="EAID_71EF7272_7240_43f7_85A6_765A54917BCE">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="89" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="InputDeviceSubsystem" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 12:58:12" modified="2024-09-16 12:58:12" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_A20A218D_1AF5_4306_8499_0B39E7215AF2" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_DA822E5B_DC24_44a6_A07F_828684253FFE" tpos="0" ea_localid="86" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 12:54:42" modified="2024-09-16 12:59:23" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_58B33647_76D3_45c0_8892_136A87CDBA79" xmi:type="uml:Object" name="24-LT-203A" scope="public" classifier="EAID_57424008_993A_4e29_99D0_F566441150FC">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_A20A218D_1AF5_4306_8499_0B39E7215AF2" tpos="0" ea_localid="85" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="InputDeviceComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 10:55:16" modified="2024-09-17 09:02:19" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=LevelTransmitter;Op==;@ENDVAR;@VAR;Variable=MeasuringPrinciple;Value=dp;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_5FB74F91_DC7B_42a4_81D4_5025A1938A4C" xmi:type="uml:Object" name="24-LT-203B" scope="public" classifier="EAID_57424008_993A_4e29_99D0_F566441150FC">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_A20A218D_1AF5_4306_8499_0B39E7215AF2" tpos="0" ea_localid="87" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="InputDeviceComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 12:59:53" modified="2024-09-17 09:03:47" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=LevelTransmitter;Op==;@ENDVAR;@VAR;Variable=MeasuringPrinciple;Value=dp;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_E3579DD7_56D2_4c21_A437_30F7C3D77FF6" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_DA822E5B_DC24_44a6_A07F_828684253FFE" tpos="0" ea_localid="93" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:02:25" modified="2024-09-16 16:02:28" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_DF0B5D8D_1B28_46a0_A35B_6C98E587BE74" xmi:type="uml:Object" scope="public" classifier="EAID_57424008_993A_4e29_99D0_F566441150FC">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_E3579DD7_56D2_4c21_A437_30F7C3D77FF6" tpos="0" ea_localid="94" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="InputDeviceComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:03:16" modified="2024-09-17 08:39:02" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=Pressure transmitter;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_90FDE157_8F16_472d_829B_B77474C084E1" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_E3579DD7_56D2_4c21_A437_30F7C3D77FF6" tpos="0" ea_localid="96" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:07:40" modified="2024-09-16 16:07:47" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=1;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_6CC665CE_F6C2_4e5f_AF43_1778D3BA18C0" xmi:type="uml:Object" scope="public" classifier="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_DA822E5B_DC24_44a6_A07F_828684253FFE" tpos="0" ea_localid="92" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteBetweenGroups" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 15:55:35" modified="2024-09-16 16:00:14" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=M;Value=1;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_F0ACFC9D_E1C6_4f28_BA18_F2F5087DDE03" xmi:type="uml:Object" scope="public" classifier="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="88" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="LogicSolverSubsystem" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 13:06:02" modified="2024-09-16 13:06:02" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_1192BCE0_ED2B_424f_AE18_7BE9EB13E2D5" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_F0ACFC9D_E1C6_4f28_BA18_F2F5087DDE03" tpos="0" ea_localid="121" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:13:04" modified="2024-09-16 16:17:49" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_CB4ECA9F_BD31_4fe9_A4A4_C155E8004381" xmi:type="uml:Object" scope="public" classifier="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_1192BCE0_ED2B_424f_AE18_7BE9EB13E2D5" tpos="0" ea_localid="123" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="LogicSolverComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:13:57" modified="2024-09-17 09:11:18" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=CPU;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_04439433_1F9B_486b_85CA_CB4D046825CE" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_1192BCE0_ED2B_424f_AE18_7BE9EB13E2D5" tpos="0" ea_localid="127" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:16:22" modified="2024-09-17 08:28:49" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=1;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_87D8D85A_0453_4990_9B9B_C48770446D42" xmi:type="uml:Object" scope="public" classifier="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="128" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="LogicSolverSubsystem" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 13:53:33" modified="2024-09-17 13:53:33" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_0B632700_DED2_4842_80A9_E6DB7905767D" xmi:type="uml:Object" scope="public" classifier="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_87D8D85A_0453_4990_9B9B_C48770446D42" tpos="0" ea_localid="130" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="Group" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 13:54:09" modified="2024-09-17 13:54:19" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys"/>
+			</element>
+			<element xmi:idref="EAID_20581841_110D_4201_AC01_4356E3531347" xmi:type="uml:Object" scope="public" classifier="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" owner="EAID_0B632700_DED2_4842_80A9_E6DB7905767D" tpos="0" ea_localid="131" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="LogicSolverComponent" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-17 13:55:47" modified="2024-09-17 13:55:51" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=Description;Value=F &amp; G node;Op==;@ENDVAR;"/>
+			</element>
+			<element xmi:idref="EAID_2433B12A_2A78_487a_ABAF_FBB94B636F7C" xmi:type="uml:Object" scope="public" classifier="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0" ea_localid="95" ea_eleType="element"/>
+				<properties isSpecification="false" sType="Object" nType="0" classname="VoteWithinGroup" scope="public" isAbstract="false"/>
+				<project author="crossover" version="1.0" phase="1.0" created="2024-09-16 16:04:58" modified="2024-09-16 16:04:58" complexity="1" status="Proposed"/>
+				<code gentype="Java"/>
+				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
+				<tags/>
+				<xrefs/>
+				<extendedProperties tagged="0" package_name="APOS Information Model - Cross subsys" runstate="@VAR;Variable=K;Value=1;Op==;@ENDVAR;"/>
+			</element>
+		</elements>
+		<connectors>
+			<connector xmi:idref="EAID_2633AA04_FB09_43e7_A8D5_85CCB91BECAE">
+				<source xmi:idref="EAID_870D9A77_C92E_4753_BB6D_14364912667E">
+					<model ea_localid="120" type="Class" name="FinalElementComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_E3975E56_4FB2_41d4_8301_962D147FD390">
+					<model ea_localid="117" type="Class" name="SISComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="30"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_D12239EA_BCD4_47ab_B72B_00FF17A71104">
+				<source xmi:idref="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070">
+					<model ea_localid="114" type="Class" name="FinalElementSubsystem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5">
+					<model ea_localid="111" type="Class" name="SIF Subsystem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="33"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_53310086_E30F_45b5_A608_574D9BC98207">
+				<source xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+					<model ea_localid="116" type="Class" name="Group"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5">
+					<model ea_localid="111" type="Class" name="SIF Subsystem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="composite" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="34"/>
+				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="1..*"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_B764DCB2_A74F_4251_8F22_A190155917A9">
+				<source xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+					<model ea_localid="116" type="Class" name="Group"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+					<model ea_localid="116" type="Class" name="Group"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="composite" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="37"/>
+				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="0..*"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_FE6586FE_7028_4025_947E_BF82BF15D099">
+				<source xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+					<model ea_localid="116" type="Class" name="Group"/>
+					<role name="crossSubsystemGroups" visibility="Public" targetScope="instance"/>
+					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723">
+					<model ea_localid="110" type="Class" name="SIF"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="composite" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="38"/>
+				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="0..*" lt="+crossSubsystemGroups"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_3565E68B_7176_431a_B1BB_D5E95BB89824">
+				<source xmi:idref="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412">
+					<model ea_localid="91" type="Class" name="VoteWithinGroup"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+					<model ea_localid="116" type="Class" name="Group"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="composite" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="27"/>
+				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="1"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_790A2546_2647_4a9f_8D0C_6CA1A440F8F7">
+				<source xmi:idref="EAID_E3975E56_4FB2_41d4_8301_962D147FD390">
+					<model ea_localid="117" type="Class" name="SISComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8">
+					<model ea_localid="116" type="Class" name="Group"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="shared" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="35"/>
+				<properties ea_type="Aggregation" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="1..*"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_01B75D95_F10F_48d2_BA82_DEDC02B422C4">
+				<source xmi:idref="EAID_57424008_993A_4e29_99D0_F566441150FC">
+					<model ea_localid="118" type="Class" name="InputDeviceComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_E3975E56_4FB2_41d4_8301_962D147FD390">
+					<model ea_localid="117" type="Class" name="SISComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="29"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_2B0DF1EF_D139_4211_AE8C_2BC195FF000B">
+				<source xmi:idref="EAID_71EF7272_7240_43f7_85A6_765A54917BCE">
+					<model ea_localid="112" type="Class" name="InputDeviceSubsystem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5">
+					<model ea_localid="111" type="Class" name="SIF Subsystem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="31"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_E6642E18_CAB4_4ca8_B9BA_06E54E74461D">
+				<source xmi:idref="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D">
+					<model ea_localid="119" type="Class" name="LogicSolverComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_E3975E56_4FB2_41d4_8301_962D147FD390">
+					<model ea_localid="117" type="Class" name="SISComponent"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="28"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_28EC6BB5_3104_46f1_86C1_F5CBCCE5D32C">
+				<source xmi:idref="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB">
+					<model ea_localid="113" type="Class" name="LogicSolverSubsystem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5">
+					<model ea_localid="111" type="Class" name="SIF Subsystem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="32"/>
+				<properties ea_type="Generalization" direction="Source -&gt; Destination"/>
+				<parameterSubstitutions/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_0FA1DD68_E652_4704_919E_63A9A713EEF7">
+				<source xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5">
+					<model ea_localid="111" type="Class" name="SIF Subsystem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723">
+					<model ea_localid="110" type="Class" name="SIF"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="composite" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="36"/>
+				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="1..*"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+			<connector xmi:idref="EAID_C883CB76_B4EE_43db_B6F2_7FA6AAA433A2">
+				<source xmi:idref="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5">
+					<model ea_localid="115" type="Class" name="VoteBetweenGroups"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type multiplicity="1" aggregation="none" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="false"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</source>
+				<target xmi:idref="EAID_AC63A030_EC45_4727_AF98_56571E551BB5">
+					<model ea_localid="111" type="Class" name="SIF Subsystem"/>
+					<role visibility="Public" targetScope="instance"/>
+					<type aggregation="composite" containment="Unspecified"/>
+					<constraints/>
+					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
+					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Unspecified;"/>
+					<documentation/>
+					<xrefs/>
+					<tags/>
+				</target>
+				<model ea_localid="26"/>
+				<properties ea_type="Aggregation" subtype="Strong" direction="Source -&gt; Destination"/>
+				<modifiers isRoot="false" isLeaf="false"/>
+				<documentation/>
+				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
+				<labels lb="1"/>
+				<extendedProperties virtualInheritance="0"/>
+				<style/>
+				<xrefs/>
+				<tags/>
+			</connector>
+		</connectors>
+		<primitivetypes>
+			<packagedElement xmi:type="uml:Package" xmi:id="EAPrimitiveTypesPackage" name="EA_PrimitiveTypes_Package" visibility="public">
+				<packagedElement xmi:type="uml:Package" xmi:id="EAJavaTypesPackage" name="EA_Java_Types_Package" visibility="public">
+					<packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_int" name="int" visibility="public">
+						<generalization xmi:type="uml:Generalization" xmi:id="EAJava_int_General">
+							<general href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+						</generalization>
+					</packagedElement>
+					<packagedElement xmi:type="uml:PrimitiveType" xmi:id="EAJava_String" name="String" visibility="public"/>
+				</packagedElement>
+			</packagedElement>
+		</primitivetypes>
+		<profiles/>
+		<diagrams>
+			<diagram xmi:id="EAID_EF19D41B_35D3_4273_B4C4_73A9769ADFCE">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" localID="6" owner="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0"/>
+				<properties name="Basic Class Diagram with Attributes" type="Logical"/>
+				<project author="crossover" version="1.0" created="2024-09-13 11:55:11" modified="2024-09-17 15:35:31"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=826;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=BCCED1B1;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<xrefs/>
+				<elements>
+					<element geometry="Left=19;Top=336;Right=174;Bottom=406;" subject="EAID_C86ACB50_892B_4132_8E1B_8DB308D0E412" seqno="1" style="DUID=BF7192B6;"/>
+					<element geometry="Left=469;Top=476;Right=613;Bottom=546;" subject="EAID_870D9A77_C92E_4753_BB6D_14364912667E" seqno="2" style="DUID=6DC41655;"/>
+					<element geometry="Left=469;Top=565;Right=605;Bottom=635;" subject="EAID_177C6CFF_380F_45e8_8F41_A3612838EF7D" seqno="3" style="DUID=7C6B64A9;"/>
+					<element geometry="Left=469;Top=385;Right=623;Bottom=455;" subject="EAID_57424008_993A_4e29_99D0_F566441150FC" seqno="4" style="DUID=22854114;"/>
+					<element geometry="Left=194;Top=476;Right=350;Bottom=546;" subject="EAID_E3975E56_4FB2_41d4_8301_962D147FD390" seqno="5" style="DUID=CE63B713;"/>
+					<element geometry="Left=227;Top=336;Right=317;Bottom=406;" subject="EAID_0723658B_3086_4fa7_A6BC_CF4D41A36EB8" seqno="6" style="DUID=16A54162;"/>
+					<element geometry="Left=28;Top=172;Right=152;Bottom=242;" subject="EAID_876F2408_A041_4e31_ACDF_3861B6885BB5" seqno="7" style="DUID=AE0C49DE;"/>
+					<element geometry="Left=470;Top=150;Right=608;Bottom=220;" subject="EAID_1F86C2DF_A136_4e68_AA8B_99A8D06D7070" seqno="8" style="DUID=51DD4C3E;"/>
+					<element geometry="Left=470;Top=247;Right=634;Bottom=317;" subject="EAID_41989128_D8B0_40f6_B7F1_E56A0927ECDB" seqno="9" style="DUID=F5F495A5;"/>
+					<element geometry="Left=470;Top=59;Right=618;Bottom=129;" subject="EAID_71EF7272_7240_43f7_85A6_765A54917BCE" seqno="10" style="DUID=BB1326D5;"/>
+					<element geometry="Left=227;Top=172;Right=317;Bottom=242;" subject="EAID_AC63A030_EC45_4727_AF98_56571E551BB5" seqno="11" style="DUID=60DB0FC1;"/>
+					<element geometry="Left=227;Top=54;Right=317;Bottom=124;" subject="EAID_FFDED8A6_C6F0_4d7f_BBAE_75A0E025C723" seqno="12" style="DUID=B9D766F9;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=1;$LLB=CX=20:CY=16:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_0FA1DD68_E652_4704_919E_63A9A713EEF7" style="Mode=3;EOID=B9D766F9;SOID=60DB0FC1;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2B0DF1EF_D139_4211_AE8C_2BC195FF000B" style="Mode=3;EOID=60DB0FC1;SOID=BB1326D5;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_28EC6BB5_3104_46f1_86C1_F5CBCCE5D32C" style="Mode=3;EOID=60DB0FC1;SOID=F5F495A5;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_D12239EA_BCD4_47ab_B72B_00FF17A71104" style="Mode=3;EOID=60DB0FC1;SOID=51DD4C3E;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-44;SY=0;EX=0;EY=0;EDGE=2;$LLB=CX=8:CY=16:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_C883CB76_B4EE_43db_B6F2_7FA6AAA433A2" style="Mode=3;EOID=60DB0FC1;SOID=AE0C49DE;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=-1;EX=0;EY=0;EDGE=1;$LLB=CX=20:CY=16:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_53310086_E30F_45b5_A608_574D9BC98207" style="Mode=3;EOID=60DB0FC1;SOID=16A54162;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;SCME=1;SCTR=1;EDGE=2;SCTR.LEFT=316;SCTR.TOP=-388;SCTR.RIGHT=348;SCTR.BOTTOM=-368;$LLB=;LLT=CX=20:CY=16:OX=33:OY=24:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=317:-388$348:-388$348:-368$317:-368$;" subject="EAID_B764DCB2_A74F_4251_8F22_A190155917A9" style="Mode=3;EOID=16A54162;SOID=16A54162;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=-44;SY=35;EX=-45;EY=6;EDGE=1;$LLB=CX=20:CY=16:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=CX=130:CY=16:OX=-2:OY=-31:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=228:-307$18:-307$18:-83$;" subject="EAID_FE6586FE_7028_4025_947E_BF82BF15D099" style="Mode=3;EOID=B9D766F9;SOID=16A54162;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=1;SY=0;EX=1;EY=0;EDGE=1;$LLB=CX=20:CY=16:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_790A2546_2647_4a9f_8D0C_6CA1A440F8F7" style="Mode=3;EOID=16A54162;SOID=CE63B713;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_01B75D95_F10F_48d2_BA82_DEDC02B422C4" style="Mode=3;EOID=CE63B713;SOID=22854114;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_E6642E18_CAB4_4ca8_B9BA_06E54E74461D" style="Mode=3;EOID=CE63B713;SOID=7C6B64A9;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=4;$LLB=;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_2633AA04_FB09_43e7_A8D5_85CCB91BECAE" style="Mode=3;EOID=CE63B713;SOID=6DC41655;Color=-1;LWidth=0;Hidden=0;"/>
+					<element geometry="SX=0;SY=0;EX=0;EY=0;EDGE=2;$LLB=CX=8:CY=16:OX=0:OY=0:HDN=0:BLD=0:ITA=0:UND=0:CLR=-1:ALN=1:DIR=0:ROT=0;LLT=;LMT=;LMB=;LRT=;LRB=;IRHS=;ILHS=;Path=;" subject="EAID_3565E68B_7176_431a_B1BB_D5E95BB89824" style="Mode=3;EOID=16A54162;SOID=BF7192B6;Color=-1;LWidth=0;Hidden=0;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_E73BF22E_2270_4d0c_8B34_66130529E241">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" localID="7" owner="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0"/>
+				<properties name="Basic Class Diagram with Attributes" type="Object"/>
+				<project author="crossover" version="1.0" created="2024-09-16 10:55:00" modified="2024-09-17 09:13:21"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=826;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=BB71BA94;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<xrefs/>
+				<elements>
+					<element geometry="Left=491;Top=368;Right=667;Bottom=420;" subject="EAID_04439433_1F9B_486b_85CA_CB4D046825CE" seqno="1" style="DUID=FBB751E3;"/>
+					<element geometry="Left=814;Top=378;Right=1154;Bottom=430;" subject="EAID_6ADE9ACB_B6BE_421f_BD1B_4932918AF604" seqno="2" style="DUID=F9482FB4;"/>
+					<element geometry="Left=994;Top=441;Right=1154;Bottom=497;" subject="EAID_4EAE9F61_506C_487a_94FD_248C3682855E" seqno="3" style="DUID=61C23CBA;"/>
+					<element geometry="Left=809;Top=441;Right=969;Bottom=497;" subject="EAID_34EE6AD9_D26C_48a4_88F1_09E478A855F7" seqno="4" style="DUID=F1944265;"/>
+					<element geometry="Left=494;Top=436;Right=662;Bottom=491;" subject="EAID_CB4ECA9F_BD31_4fe9_A4A4_C155E8004381" seqno="5" style="DUID=762BCDA9;"/>
+					<element geometry="Left=784;Top=333;Right=1188;Bottom=513;" subject="EAID_F8A9001A_D2E2_4e5f_B51F_DB438A9E2B5B" seqno="6" style="DUID=F6108CDB;"/>
+					<element geometry="Left=471;Top=323;Right=687;Bottom=510;" subject="EAID_1192BCE0_ED2B_424f_AE18_7BE9EB13E2D5" seqno="7" style="DUID=63F52622;"/>
+					<element geometry="Left=93;Top=566;Right=302;Bottom=634;" subject="EAID_90FDE157_8F16_472d_829B_B77474C084E1" seqno="8" style="DUID=8A2CA32B;"/>
+					<element geometry="Left=88;Top=209;Right=315;Bottom=277;" subject="EAID_2433B12A_2A78_487a_ABAF_FBB94B636F7C" seqno="9" style="DUID=BE0829B2;"/>
+					<element geometry="Left=93;Top=626;Right=306;Bottom=683;" subject="EAID_DF0B5D8D_1B28_46a0_A35B_6C98E587BE74" seqno="10" style="DUID=A906A5B9;"/>
+					<element geometry="Left=65;Top=518;Right=338;Bottom=700;" subject="EAID_E3579DD7_56D2_4c21_A437_30F7C3D77FF6" seqno="11" style="DUID=91AE7CCD;"/>
+					<element geometry="Left=65;Top=99;Right=299;Bottom=155;" subject="EAID_6CC665CE_F6C2_4e5f_AF43_1778D3BA18C0" seqno="12" style="DUID=B1426A6F;"/>
+					<element geometry="Left=759;Top=277;Right=1208;Bottom=529;" subject="EAID_FC4F3A31_332B_4aa8_A878_79249CA26C6C" seqno="13" style="DUID=44959EF4;"/>
+					<element geometry="Left=451;Top=277;Right=707;Bottom=528;" subject="EAID_F0ACFC9D_E1C6_4f28_BA18_F2F5087DDE03" seqno="14" style="DUID=41368517;"/>
+					<element geometry="Left=88;Top=383;Right=315;Bottom=470;" subject="EAID_5FB74F91_DC7B_42a4_81D4_5025A1938A4C" seqno="15" style="DUID=C37F7D75;"/>
+					<element geometry="Left=88;Top=282;Right=315;Bottom=374;" subject="EAID_58B33647_76D3_45c0_8892_136A87CDBA79" seqno="16" style="DUID=FAC17220;"/>
+					<element geometry="Left=65;Top=167;Right=338;Bottom=487;" subject="EAID_A20A218D_1AF5_4306_8499_0B39E7215AF2" seqno="17" style="DUID=26554F20;"/>
+					<element geometry="Left=20;Top=55;Right=400;Bottom=719;" subject="EAID_DA822E5B_DC24_44a6_A07F_828684253FFE" seqno="18" style="DUID=AA6A87D7;"/>
+				</elements>
+			</diagram>
+			<diagram xmi:id="EAID_B52581CE_F907_4246_8CC8_7336C48E6E01">
+				<model package="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" localID="8" owner="EAPK_01D0A28D_285A_4072_A8FD_51F45EEC6BFC" tpos="0"/>
+				<properties name="APOS Information Model" type="Object"/>
+				<project author="crossover" version="1.0" created="2024-09-17 13:49:18" modified="2024-09-17 15:20:47"/>
+				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=0;PPgs.cy=0;DocSize.cx=826;DocSize.cy=1169;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=9;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AllDockable=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
+				<style2 value="ExcludeRTF=0;DocAll=0;HideQuals=0;AttPkg=1;ShowTests=0;ShowMaint=0;SuppressFOC=1;MatrixActive=0;SwimlanesActive=1;KanbanActive=0;MatrixLineWidth=1;MatrixLineClr=0;MatrixLocked=0;TConnectorNotation=UML 2.1;TExplicitNavigability=0;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;SPT=1;MDGDgm=;STBLDgm=;ShowNotes=0;VisibleAttributeDetail=0;ShowOpRetType=1;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;SuppressedCompartments=;Theme=:119;SaveTag=B0839771;"/>
+				<swimlanes value="locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;"/>
+				<matrixitems value="locked=false;matrixactive=false;swimlanesactive=true;kanbanactive=false;width=1;clrLine=0;"/>
+				<extendedProperties/>
+				<persistentstyle value="DGS=On=0:CNT=8:W=120:H=40:SG=0:SGH=0:AEB=0:;AR=0;DCL=0;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;Swimlanes=locked=false;orientation=0;width=0;inbar=false;names=false;color=-1;bold=false;fcol=0;tcol=-1;ofCol=-1;ufCol=-1;hl=1;ufh=0;hh=0;cls=0;bw=0;hli=0;bro=0;SwimlaneFont=lfh:-10,lfw:0,lfi:0,lfu:0,lfs:0,lfface:Carlito,lfe:0,lfo:0,lfchar:1,lfop:0,lfcp:0,lfq:0,lfpf=0,lfWidth=0;;"/>
+				<xrefs/>
+				<elements>
+					<element geometry="Left=1303;Top=565;Right=1475;Bottom=633;" subject="EAID_D5542703_FC05_4146_8D10_25410DF6145B" seqno="1" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=618C6ADD;"/>
+					<element geometry="Left=1303;Top=485;Right=1475;Bottom=553;" subject="EAID_413A8B93_8E58_4bc0_B97B_0E2E8818DAA7" seqno="2" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=40DD8C9E;"/>
+					<element geometry="Left=1285;Top=449;Right=1497;Bottom=648;" subject="EAID_26A6B000_58E7_48ae_81C0_24E19C637367" seqno="3" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=60C40929;"/>
+					<element geometry="Left=1064;Top=565;Right=1236;Bottom=633;" subject="EAID_8C468D24_90D5_4030_AED3_159F1459E47E" seqno="4" style="DUID=34EC7A46;"/>
+					<element geometry="Left=1064;Top=485;Right=1236;Bottom=553;" subject="EAID_558D78A7_BB10_4ad4_8733_E22AF315097D" seqno="5" style="DUID=3F2F8760;"/>
+					<element geometry="Left=1044;Top=449;Right=1256;Bottom=648;" subject="EAID_3D5E2DED_CDE6_434e_B5A4_23065363F826" seqno="6" style="DUID=EF65C364;"/>
+					<element geometry="Left=806;Top=973;Right=961;Bottom=1031;" subject="EAID_CD8342B7_46B2_4f68_9A0F_245B493FE464" seqno="7" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=47909CD5;"/>
+					<element geometry="Left=626;Top=973;Right=781;Bottom=1031;" subject="EAID_393D02B0_5F4D_4eae_852D_C7284AA5B593" seqno="8" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=1DCCD5CB;"/>
+					<element geometry="Left=453;Top=975;Right=608;Bottom=1033;" subject="EAID_9C11A7A3_8BA7_451c_9969_215F83998C0D" seqno="9" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=4CB49F42;"/>
+					<element geometry="Left=451;Top=915;Right=961;Bottom=970;" subject="EAID_9F2888A0_0451_44fd_B241_E207008F6BAE" seqno="10" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=D1375A12;"/>
+					<element geometry="Left=806;Top=779;Right=961;Bottom=837;" subject="EAID_1A0CF684_E69C_4d17_9F40_D85D5AF7DE79" seqno="11" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=116D6116;"/>
+					<element geometry="Left=626;Top=779;Right=781;Bottom=837;" subject="EAID_2F275508_0060_4732_B20A_9E2384A61204" seqno="12" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=E5838F71;"/>
+					<element geometry="Left=453;Top=779;Right=608;Bottom=837;" subject="EAID_DEE02EF1_19ED_431f_95CC_5608DD706C99" seqno="13" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=B7C3744B;"/>
+					<element geometry="Left=451;Top=722;Right=961;Bottom=777;" subject="EAID_927BF6AA_2388_4ec7_903D_0A5E00566253" seqno="14" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=205A5EB2;"/>
+					<element geometry="Left=429;Top=876;Right=990;Bottom=1054;" subject="EAID_D5610A2C_C4F7_4171_A6C1_6C341CC8F6C0" seqno="15" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=FA171C41;"/>
+					<element geometry="Left=429;Top=678;Right=990;Bottom=856;" subject="EAID_A5E139F5_8EEF_4b2f_801C_295FF169ADF0" seqno="16" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=D0D3B346;"/>
+					<element geometry="Left=448;Top=582;Right=603;Bottom=640;" subject="EAID_5E4AABBB_988B_4419_8255_356FDAE70842" seqno="17" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=3276B7BC;"/>
+					<element geometry="Left=626;Top=583;Right=781;Bottom=641;" subject="EAID_13C06F7F_BE2C_4a25_9237_99CD6B4F27BC" seqno="18" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=915BECE0;"/>
+					<element geometry="Left=806;Top=583;Right=961;Bottom=641;" subject="EAID_3D9926EB_762A_489b_AB22_51FD711DB876" seqno="19" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=EB6DC223;"/>
+					<element geometry="Left=451;Top=522;Right=961;Bottom=577;" subject="EAID_545AF3A5_3160_41d2_81B8_A46402352D7D" seqno="20" style="DUID=4399C239;"/>
+					<element geometry="Left=429;Top=478;Right=990;Bottom=656;" subject="EAID_14B203FA_759E_4780_960A_507B6F7B423D" seqno="21" style="NSL=0;BCol=-1;BFol=-1;LCol=-1;LWth=-1;fontsz=0;bold=0;black=0;italic=0;ul=0;charset=0;pitch=0;DUID=963E81BF;"/>
+					<element geometry="Left=450;Top=337;Right=960;Bottom=392;" subject="EAID_DD2A1382_A640_4d12_B0B3_84DFF78FE66C" seqno="22" style="DUID=1108977C;"/>
+					<element geometry="Left=805;Top=399;Right=960;Bottom=457;" subject="EAID_EB9485C5_7433_4001_BF38_360CD1B6629A" seqno="23" style="DUID=CBA7E96A;"/>
+					<element geometry="Left=625;Top=399;Right=780;Bottom=457;" subject="EAID_3EB65F59_A1DC_4910_B170_F5FEB4C08BD0" seqno="24" style="DUID=43D0EE6F;"/>
+					<element geometry="Left=448;Top=399;Right=603;Bottom=457;" subject="EAID_F30C1A94_9684_4490_AFA4_CFEAC4069CDD" seqno="25" style="DUID=5525C100;"/>
+					<element geometry="Left=436;Top=222;Right=985;Bottom=277;" subject="EAID_DAA98627_01DF_4cf0_ABA9_7587AAF9427B" seqno="26" style="DUID=3E45AD6D;"/>
+					<element geometry="Left=431;Top=292;Right=989;Bottom=472;" subject="EAID_D26D730A_6544_42bc_9D3C_5A42A035A79E" seqno="27" style="DUID=29686FBD;"/>
+					<element geometry="Left=400;Top=99;Right=1405;Bottom=154;" subject="EAID_567BD55C_41B9_40c6_BFAA_FF283A04351D" seqno="28" style="DUID=16E6A702;"/>
+					<element geometry="Left=408;Top=177;Right=1013;Bottom=1089;" subject="EAID_B9524B51_8B1C_4c04_A862_A2FC3EB62BC7" seqno="29" style="DUID=1083954B;"/>
+					<element geometry="Left=75;Top=564;Right=257;Bottom=639;" subject="EAID_20581841_110D_4201_AC01_4356E3531347" seqno="30" style="DUID=9351A1E2;"/>
+					<element geometry="Left=48;Top=519;Right=285;Bottom=661;" subject="EAID_0B632700_DED2_4842_80A9_E6DB7905767D" seqno="31" style="DUID=CA1A004A;"/>
+					<element geometry="Left=352;Top=50;Right=1613;Bottom=1107;" subject="EAID_58C080D3_E022_41b5_9177_3BD38986C3A3" seqno="32" style="DUID=3378F730;"/>
+					<element geometry="Left=25;Top=445;Right=302;Bottom=685;" subject="EAID_87D8D85A_0453_4990_9B9B_C48770446D42" seqno="33" style="DUID=D944B997;"/>
+				</elements>
+			</diagram>
+		</diagrams>
+	</xmi:Extension>
+</xmi:XMI>
